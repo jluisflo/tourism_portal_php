@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" /> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>PROYECTO DPWEB - Principal</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/materialize.css"> 
+	<link rel="stylesheet" type="text/css" href="css/style.css"> 
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <ul id="dropEntregaLarge" class="dropdown-content">
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="equipo.html">Equipo</a></li>
+        <li><a href="plataformas.html">Plataformas Web</a></li>
+        <li><a href="estructuras.html">Estructuras Web</a></li>
+        <li><a href="maquetacion.html">Maquetacion Web</a></li>
+        <li><a href="info.html">Otra Información</a></li>
+        <li><a href="glosario.html">Glosario</a></li>
+    </ul>
+    <ul id="dropEntregaMobile" class="dropdown-content">
+      <li><a href="#">Atras <span class="fa fa-angle-left right"> </span></a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="equipo.html">Equipo</a></li>
+        <li><a href="plataformas.html">Plataformas Web</a></li>
+        <li><a href="estructuras.html">Estructuras Web</a></li>
+        <li><a href="maquetacion.html">Maquetacion Web</a></li>
+        <li><a href="info.html">Otra Información</a></li>
+        <li><a href="glosario.html">Glosario</a></li>
+    </ul> 
+
+  <nav class="blue-grey darken-2">
+      <div class="nav-wrapper container">
+          <a href="index.html" class="brand-logo amber-text">Turis<span class="cyan-text text-accent-3">go</span></a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="fa fa-bars"></i></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="busqueda.php"><i class="fa fa-search right"> </i> Destinos</a></li>
+            <li><a href="cotizacion.php"> Cotizar</a></li>
+            <li><a href="encuesta.html">Encuesta</a></li>
+            <li><a class="dropdown-button" href="#!" data-activates="dropEntregaLarge">Primera Entrega <i class="fa fa-caret-down right"></i></a></li>
+            <li><a href="contactenos.html">Contactenos</a></li>
+            <li><a href="login.html">Iniciar Sesión | Registrarme</a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="busqueda.php"><i class="fa fa-search right"> </i> Destinos</a></li>
+            <li><a href="cotizacion.php"> Cotizar</a></li>
+            <li><a href="encuesta.html">Encuesta</a></li>
+            <li><a class="dropdown-button" href="#" data-activates="dropEntregaMobile">1° Entrega <i class="fa fa-caret-down right"> </i></a></li>
+            <li><a href="contactenos.html">Contactenos</a></li>
+            <li><a href="login.html">Iniciar Sesión | Registrarme</a></li>
+          </ul>
+          
+      </div>
+    </nav>
+
+  <div class="container center">
+    <form id="encuesta" method="POST" action="script/guardarEncuesta.php">
+
+     <div class="section">
+     <h2 class="thin center"> Ayudanos a seguir mejorando </h2>
+     </div>
+
+
+      <div class="section">
+          <span class="round-item">1</span>
+          <h6 class="light">Sexo:</h6>
+          <p class="center">
+            <input name="radioSexo" type="radio" id="radioSexo1" value="Femenino" />
+            <label for="radioSexo1">Femenino</label>
+
+            <input name="radioSexo" type="radio" id="radioSexo2" value="Masculino" />
+            <label for="radioSexo2">Masculino</label>
+          </p>
+      </div>
+      <div class="section">
+        <span class="round-item">2</span>
+        <h6 class="light">¿Dentro de cual rango de edad se encuentra Ud?</h6>
+          <p class="center">
+            <input name="radioEdad" type="radio" id="radioEdad1" value="20 años o menos" />
+            <label for="radioEdad1">20 años o menos</label>
+
+            <input name="radioEdad" type="radio" id="radioEdad2" value="Entre 21 y 30 años" />
+            <label for="radioEdad2">Entre 21 y 30 años</label> 
+
+            <input name="radioEdad" type="radio" id="radioEdad3" value="Entre 31 y 40 años" />
+            <label for="radioEdad3">Entre 31 y 40 años</label>
+
+            <input name="radioEdad" type="radio" id="radioEdad4" value="Entre 41 o mas" />
+            <label for="radioEdad4">Entre 41 o mas</label>
+          </p>
+      </div>
+      <div class="section">
+        <span class="round-item">3</span>
+        <h6 class="light">¿En cual departamento vive Ud?</h6>
+        <div class="row">
+          <div class="input-field col s12 m4 l4 offset-m4 offset-l4">
+            <select name="departamento" class="browser-default">
+              <option value="">Seleccione un departamento</option>
+              <option value="1">Ahuachapán </option>
+              <option value="2">Santa Ana </option>
+              <option value="3">Sonsonate </option>
+              <option value="4">Usulután </option>
+              <option value="5">San Miguel </option>
+              <option value="6">Morazán </option>
+              <option value="7">La Unión </option>
+              <option value="8">La Libertad </option>
+              <option value="9">Chalatenango </option>
+              <option value="10">Cuscatlán </option>
+              <option value="11">San Salvador </option>
+              <option value="12">La Paz </option>
+              <option value="13">Cabañas </option>
+              <option value="14">San Vicente </option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <span class="round-item">4</span>
+        <h6 class="light">¿Posee vehiculo propio?</h6>
+          <p class="center">
+            <input name="radioAuto" type="radio" id="radioAuto1" value="Si" />
+            <label for="radioAuto1">Si</label>
+
+            <input name="radioAuto" type="radio" id="radioAuto2" value="No" />
+            <label for="radioAuto2">No</label>
+          </p>
+      </div>
+      <div class="section">
+        <span class="round-item">5</span>
+        <h6 class="light">¿Con que frecuencia Viaja?</h6>
+          <p class="center">
+            <input name="radioFrecuencia" type="radio" id="radioFrecuencia1" value="Semanalmente" />
+            <label for="radioFrecuencia1">Semanalmente</label>
+
+            <input name="radioFrecuencia" type="radio" id="radioFrecuencia2" value="Mensualmente" />
+            <label for="radioFrecuencia2">Mensualmente</label>
+
+            <input name="radioFrecuencia" type="radio" id="radioFrecuencia3" value="Ocasionalmente" />
+            <label for="radioFrecuencia3">Ocasionalmente</label>
+          </p>
+      </div>
+      <div class="section">
+        <span class="round-item">6</span>
+        <h6 class="light">¿Que tipo de turismo prefiere Ud?</h6>
+          <p class="center">
+            <input type="checkbox" name="checkTipoTurismo[]" id="checkTipoTurismo1" value="Turismo Arqueológico" />
+            <label for="checkTipoTurismo1">Turismo Arqueológico </label>
+
+            <input type="checkbox" name="checkTipoTurismo[]" id="checkTipoTurismo2" value="Turismo Religioso" />
+            <label for="checkTipoTurismo2">Turismo Religioso </label>
+
+            <input type="checkbox" name="checkTipoTurismo[]" id="checkTipoTurismo3" value="Turismo Arquitectónico" />
+            <label for="checkTipoTurismo3">Turismo Arquitectónico</label>
+          </p>
+          <p class="center">
+            <input type="checkbox" name="checkTipoTurismo[]" id="checkTipoTurismo4" value="Turismo Gastronomico" />
+            <label for="checkTipoTurismo4">Turismo Gastronomico</label>
+ 
+            <input type="checkbox" name="checkTipoTurismo[]" id="checkTipoTurismo5" value="Turismo Cultural" />
+            <label for="checkTipoTurismo5">Turismo Cultural</label>
+
+            <input type="checkbox" name="checkTipoTurismo[]" id="checkTipoTurismo6" value="Turismo de Sol y Playa" />
+            <label for="checkTipoTurismo6">Turismo de Sol y Playa</label>
+          </p>
+          <p class="center">
+            <input type="checkbox" name="checkTipoTurismo[]" id="checkTipoTurismo7" value="Turismo de Aventura" />
+            <label for="checkTipoTurismo7">Turismo de Aventura</label>
+
+            <input type="checkbox" name="checkTipoTurismo[]" id="checkTipoTurismo8" value="Otro" />
+            <label for="checkTipoTurismo8">Otro</label>
+          </p>
+      </div>
+      <div class="section">
+        <span class="round-item">7</span>
+        <h6 class="light">¿Por cuales medios obtiene información turística?</h6>
+          <p class="center">
+            <input type="checkbox" name="checkMedios[]" id="checkMedios1" value="Televisión" />
+            <label for="checkMedios1">Televisión</label>
+
+            <input type="checkbox" name="checkMedios[]" id="checkMedios2" value="Radio" />
+            <label for="checkMedios2">Radio</label>
+       
+            <input type="checkbox" name="checkMedios[]" id="checkMedios3" value="Internet" />
+            <label for="checkMedios3">Internet</label>
+          </p>
+          <p class="center">
+            <input type="checkbox" name="checkMedios[]" id="checkMedios4" value="Periodicos" />
+            <label for="checkMedios4">Periodicos</label>
+   
+            <input type="checkbox" name="checkMedios[]" id="checkMedios5" value="Revistas" />
+            <label for="checkMedios5">Revistas</label>
+          </p>
+      </div>
+      <div class="section">
+        <span class="round-item">8</span>
+        <h6 class="light">¿Cuál es su motivacion inicial para explorar el turismo regional?</h6>
+          <div class="row">
+            <div class="input-field col s12 m6 l6 offset-m3 offset-l3">
+            <textarea id="textmotivacion" class="materialize-textarea" name="motivacion"></textarea>
+            <label for="textmotivacion">Respuesta</label>
+            </div>
+          </div>
+      </div>
+      <div class="section">
+        <span class="round-item">9</span>
+        <h6 class="light">¿Considera diversa la oferta turistica del pais? </h6>
+          <p class="center">
+            <input name="radioDiversidad" type="radio" id="radioDiversidad1" value="Si" />
+            <label for="radioDiversidad1">Si</label>
+
+            <input name="radioDiversidad" type="radio" id="radioDiversidad2" value="No" />
+            <label for="radioDiversidad2">No</label>
+          </p>
+      </div>
+      <div class="section">
+        <span class="round-item">10</span>
+        <h6 class="light">Aproximadamente ¿Cuánto suele invertir en cada viaje con su familia o amigos?</h6>
+          <div class="row">
+            <div class="input-field col s12 m4 l4 offset-m4 offset-l4">
+            <input id="inputdinero" type="text" name="dinero">
+            <label for="inputdinero">$</label>
+            </div>
+          </div>
+      </div>
+      <div class="section">
+        <span class="round-item">11</span>
+        <h6 class="light">¿Considera el precio, algo esencial para volver a visitar el mismo destino turistico?</h6>
+          <p class="center">
+            <input name="radioPrecio" type="radio" id="radioPrecio1" value="Si" />
+            <label for="radioPrecio1">Si</label>
+
+            <input name="radioPrecio" type="radio" id="radioPrecio2" value="No" />
+            <label for="radioPrecio2">No</label>
+
+            <input name="radioPrecio" type="radio" id="radioPrecio3" value="Aveces" />
+            <label for="radioPrecio3">Aveces</label>
+          </p>
+      </div>
+      <div class="section">
+        <span class="round-item">12</span>
+        <h6 class="light">¿Ha tenido que salir del pais para visitar un destino turistico que cumpla con sus expectativas?</h6>
+          <p class="center">
+            <input name="radioExtranjero" type="radio" id="radioExtranjero1" value="Si" />
+            <label for="radioExtranjero1">Si</label>
+
+            <input name="radioExtranjero" type="radio" id="radioExtranjero2" value="No" />
+            <label for="radioExtranjero2">No</label>
+          </p>
+      </div>
+      <div class="section">
+        <span class="round-item">13</span>
+        <h6 class="light">Ud cree que el modelo turistico de El salvador es un modelo a seguir para centroamerica? </h6>
+          <p class="center">
+            <input name="radioModelo" type="radio" id="radioModelo1" value="Si" />
+            <label for="radioModelo1">Si</label>
+
+            <input name="radioModelo" type="radio" id="radioModelo2" value="No" />
+            <label for="radioModelo2">No</label>
+          </p>
+      </div>
+      
+      <div class="section">
+        <span class="round-item">14</span>
+        <h6 class="light">¿Considera que en el salvador se ha invertido lo suficiente en turismo?</h6>
+          <p class="center">
+            <input name="radioInversion" type="radio" id="radioInversion1" value="Si" />
+            <label for="radioInversion1">Si</label>
+
+            <input name="radioInversion" type="radio" id="radioInversion2" value="No" />
+            <label for="radioInversion2">No</label>
+          </p>
+      </div>
+      <div class="section">
+        <span class="round-item">15</span>
+        <h6 class="light">Cree que la inseguridad que atraviesa el pais es un obstaculo para el turismo?</h6>
+          <p class="center">
+            <input name="radioSeguridad" type="radio" id="radioSeguridad1" value="Si" />
+            <label for="radioSeguridad1">Si</label>
+ 
+            <input name="radioSeguridad" type="radio" id="radioSeguridad2" value="No" />
+            <label for="radioSeguridad2">No</label>
+          </p>
+      </div>
+      <div class="section">
+        <span class="round-item">16</span>
+        <h6 class="light">De acuerdo a la respuesta de la pregunta anterior ¿Porque lo considera asi?</h6>
+        <div class="row">
+          <div class="input-field col s12 m6 l6 offset-m3 offset-l3">
+            <textarea id="textseguridad" class="materialize-textarea" name="textseguridad"></textarea>
+            <label for="textseguridad">Respuesta</label>
+          </div>
+        </div>
+      </div>
+      <div class="section center">
+          <input type="submit" name="encuestapublica" value="Enviar" class="btn btn-large cyan accent-3">
+      </div>
+    </form>
+  </div>
+  <footer class="page-footer blue-grey darken-3">
+    <div class="container center padding-foot">
+      <i class="fa fa-heart fa-2x grey-text text-lighten-1"></i><br>
+      <h5 class="light blue-grey-text text-lighten-3">Made in El Salvador</h5>
+    <hr width="80%">
+    <hr width="80%">
+    <h5 class="light blue-grey-text text-lighten-2">Proyecto en desarrollo con la iniciativa de alumnos UTEC con fines académicos</h5>
+    <hr width="80%">
+    <hr width="80%">
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2017 Desarrolo web
+      <a class="grey-text text-lighten-4 right" href="http://www.utec.edu.sv">Utec</a>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/materialize.js"></script>
+  <script type="text/javascript" src="js/init.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.0/additional-methods.min.js"></script>
+
+<script type="text/javascript">
+  jQuery.validator.setDefaults({
+      errorClass: "invalid",
+      pendingClass: "pending",
+      validClass: "valid",
+      errorElement: "span",
+  });
+  jQuery.validator.addMethod(
+          "notEqualTo",
+          function(elementValue,element,param) {
+            return elementValue != param;
+          },
+          "Valor no valido"
+        );
+  $("#encuesta").validate({
+    rules: {
+      radioSexo:{
+        required: true
+      },
+      radioEdad:{
+        required: true,
+      },
+      departamento:{
+         required: true
+      },
+      radioAuto: {
+        required: true
+      },
+      radioFrecuencia: {
+        required: true
+      },
+      'checkTipoTurismo[]': {
+        required: true
+      },
+      'checkMedios[]': {
+        required: true
+      },
+      motivacion: {
+        required: true
+      },
+      radioDiversidad: {
+        required: true
+      },
+      dinero: {
+        required: true,
+        number: true
+      },
+      radioPrecio: {
+        required: true
+      },
+      radioExtranjero: {
+        required: true
+      },
+      radioModelo: {
+        required: true
+      },
+      radioInversion: {
+        required: true
+      },
+      radioSeguridad: {
+        required: true
+      },
+      textseguridad:{
+        required: true
+      }
+    },
+ errorPlacement: function (error, element) {
+            error.insertBefore(element);
+        },   
+
+  });
+</script>
+</body>
+</html>

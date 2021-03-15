@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" /> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>PROYECTO DPWEB - Plataformas Web</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/materialize.css"> 
+	<link rel="stylesheet" type="text/css" href="css/style.css"> 
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+</head>
+<body>
+
+  	<ul id="dropEntregaLarge" class="dropdown-content">
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="equipo.html">Equipo</a></li>
+        <li><a href="plataformas.html">Plataformas Web</a></li>
+        <li><a href="estructuras.html">Estructuras Web</a></li>
+        <li><a href="maquetacion.html">Maquetacion Web</a></li>
+        <li><a href="info.html">Otra Información</a></li>
+        <li><a href="glosario.html">Glosario</a></li>
+    </ul>
+    <ul id="dropEntregaMobile" class="dropdown-content">
+    	<li><a href="#">Atras <span class="fa fa-angle-left right"> </span></a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="equipo.html">Equipo</a></li>
+        <li><a href="plataformas.html">Plataformas Web</a></li>
+        <li><a href="estructuras.html">Estructuras Web</a></li>
+        <li><a href="maquetacion.html">Maquetacion Web</a></li>
+        <li><a href="info.html">Otra Información</a></li>
+        <li><a href="glosario.html">Glosario</a></li>
+    </ul>	
+
+	<nav class="blue-grey darken-2">
+	    <div class="nav-wrapper container">
+      		<a href="index.html" class="brand-logo amber-text">Turis<span class="cyan-text text-accent-3">go</span></a>
+		  	<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="fa fa-bars"></i></a>
+		  	<ul class="right hide-on-med-and-down">
+		  		  <li><a href="busqueda.php"><i class="fa fa-search right"> </i> Destinos</a></li>
+            <li><a href="cotizacion.php"> Cotizar</a></li>
+		  		  <li><a href="encuesta.html">Encuesta</a></li>
+	        	<li><a class="dropdown-button" href="#!" data-activates="dropEntregaLarge">Primera Entrega <i class="fa fa-caret-down right"></i></a></li>
+	        	<li><a href="contactenos.html">Contactenos</a></li>
+	        	<li><a href="login.html">Iniciar Sesión | Registrarme</a></li>
+	      	</ul>
+	        <ul class="side-nav" id="mobile-demo">
+	        	<li><a href="busqueda.php"><i class="fa fa-search right"> </i> Destinos</a></li>
+            <li><a href="cotizacion.php"> Cotizar</a></li>
+		  		  <li><a href="encuesta.html">Encuesta</a></li>
+	        	<li><a class="dropdown-button" href="#" data-activates="dropEntregaMobile">1° Entrega <i class="fa fa-caret-down right"> </i></a></li>
+	      		<li><a href="contactenos.html">Contactenos</a></li>
+	        	<li><a href="login.html">Iniciar Sesión | Registrarme</a></li>
+	      	</ul>
+	      	
+	    </div>
+  	</nav>
+
+	<div class="container">
+		<table class="table-responsive">
+		<tr>
+			<td><h2 class="blue-grey-text light">Plataformas web</h2><hr class="colorhr"></td>
+		</tr>
+		<tr>
+			<td>
+				<h5>Que es una plataforma web?</h5>
+				<p>Definicion</p>
+
+				<h5>Tipos de plataformas web</h5>
+				<p><strong>Lamp (Linux, Apache, Mysql, [Perl | Python | Php])</strong></p>
+					<center><img height="110px" src="img/lamp.png" class="materialboxed img-responsive z-depth-1"></center>
+
+				<p>LAMP es el acrónimo usado para describir un sistema de infraestructura de internet que usa las siguientes herramientas:
+
+				    Linux, el sistema operativo; En algunos casos también se refiere a LDAP.
+				    Apache, el servidor web;
+				    MySQL/MariaDB, el gestor de bases de datos;
+				    Perl, PHP, o Python, los lenguajes de programación.
+					<br><br>
+					La combinación de estas tecnologías es usada principalmente para definir la infraestructura de un servidor web, utilizando un paradigma de programación para el desarrollo.
+					<br><br>
+					A pesar de que el origen de estos programas de código abierto no han sido específicamente diseñado para trabajar entre sí, la combinación se popularizó debido a su bajo coste de adquisición y ubicuidad de sus componentes (ya que vienen pre-instalados en la mayoría de las distribuciones linux). Cuando son combinados, representan un conjunto de soluciones que soportan servidores de aplicaciones.
+					<br><br>
+					<strong>Ventajas:</strong> <br>
+					-Disponibilidad y bajos costos.<br>
+					-Velocidad y mejor tiempo de actividad. <br>
+					-Los sitios web basados en Linux eran más rápidos que los basados en Windows. <br>
+					-Es muy fácil colocar instrucciones tanto en nuestro código para activar nuevas funcionalidades del servidor. <br>
+					-Es la mejor para la implementación y manejo de rescritura e URL. <br>
+					-Servidor de bases de datos relacional MySQL muy rápido para consultas de lectura y sitios no demasiado grandes. <br>
+					<strong>Desventajas: </strong><br>
+					-No muy buen rendimiento de MySQL para sitios web demasiado grandes. <br>
+					-Es muy distinto de Windows, lo que dificulta el trabajo. <br>
+					</p> 
+					<br>
+					<br>
+					<p><strong>Wamp (Windows, Apache, Mysql, [Perl | Python | Php])</strong></p>
+					<center><img height="110px" src="img/wamp.jpg" class="materialboxed img-responsive z-depth-1"></center>
+					<p>
+						Este tipo de plataforma web suele usarse como herramienta de desarrollo por la mayoría de los programadores que tenemos Windows como SO principal y tenemos que desarrollar aplicaciones web en PHP. Es decir, probamos nuestra aplicación PHP en el servidor de desarrollo WAMP y luego subimos la aplicación al servidor LAMP. Existe un software llamado WAMP5 que instala de forma compacta y configura fácilmente toda la plataforma WAMP.<br>
+
+						<strong>Ventajas: </strong><br>
+						-Ideal para utilizar como servidor de desarrollo. <br>
+						-Fácil instalación con el software WAMP5. <br>
+						<strong>Desventajas: </strong><br>
+						-Puedes tener alguna dificultad a la hora de instalar los subsistemas por separado. <br>
+						-Puede que siempre se dificulte la instalación de PHP en IIS (Internet Information Server). 
+					</p>
+					<br>
+					<br>
+					<p><strong>Mamp (Mac, Apache, Mysql, [Perl | Python | Php])</strong></p>
+					<center><img height="110px" src="img/mamp.png" class="materialboxed img-responsive z-depth-1"></center>
+					<p>
+						El acrónimo MAMP se refiere al conjunto de programas software comúnmente usados para desarrollar sitios web dinámicos sobre sistemas operativos Apple Macintosh, MAC OS X.<br>
+
+						<strong>Ventajas:</strong><br>
+						Puedes hacerlo andar y apagarlo con un sólo click para que deje de consumir recursos de tu sistema.  Además puedes borrarlo completamente sólo arrastrándolo a la papelera. 
+						<strong>Desventajas:</strong><br>
+						Mayor coste al usuario por parte del equipo de trabajo. 
+					</p>
+					<br>
+					<br>
+					<p><strong>Internet Information Services IIS</strong></p>
+					<center><img height="110px" src="img/iis.jpg" class="materialboxed img-responsive z-depth-1"></center>
+					<p>
+						Internet Information Services o IIS1 es un servidor web y un conjunto de servicios para el sistema operativo Microsoft Windows. Originalmente era parte del Option Pack para Windows NT. Luego fue integrado en otros sistemas operativos de Microsoft destinados a ofrecer servicios, como Windows 2000 o Windows Server 2003. Windows XP Profesional incluye una versión limitada de IIS. Los servicios que ofrece son: FTP, SMTP, NNTP y HTTP/HTTPS.2
+						<br><br>
+						Este servicio convierte a un PC en un servidor web para Internet o una intranet, es decir que en los ordenadores que tienen este servicio instalado se pueden publicar páginas web tanto local como remotamente.
+						<br><br>
+						Se basa en varios módulos que le dan capacidad para procesar distintos tipos de páginas. Por ejemplo, Microsoft incluye los de Active Server Pages (ASP) y ASP.NET. También pueden ser incluidos los de otros fabricantes, como PHP3 o Perl. 
+					</p>
+			</td>
+		</tr>
+		</table>
+	</div>
+
+	<div class="blue center white-text section">
+		<h4 class="light">Muy pronto presentaremos algo increible. Esperanos ;)</h4>
+	</div>
+
+<footer class="page-footer blue-grey darken-3">
+	  <div class="container center padding-foot">
+	  	<i class="fa fa-heart fa-2x grey-text text-lighten-1"></i><br>
+	  	<h5 class="light blue-grey-text text-lighten-3">Made in El Salvador</h5>
+	  <hr width="80%">
+	  <hr width="80%">
+	  <h5 class="light blue-grey-text text-lighten-2">Proyecto en desarrollo con la iniciativa de alumnos UTEC con fines académicos</h5>
+	  <hr width="80%">
+	  <hr width="80%">
+	  </div>
+	  <div class="footer-copyright">
+	    <div class="container">
+	    © 2017 Desarrolo web
+	    <a class="grey-text text-lighten-4 right" href="http://www.utec.edu.sv">Utec</a>
+	    </div>
+	  </div>
+	</footer>
+            
+
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/materialize.js"></script>
+  <script type="text/javascript" src="js/init.js"></script>
+</body>
+</html>
+</body>
+</html>
